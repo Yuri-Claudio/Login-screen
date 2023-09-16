@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="main-login" id="blur">
+        <div class="left-login"> 
+            <h1>Let's Start <br> and Enjoy Our Web World!</h1>
+            <img src = "svg/tecnoboy.svg" class="login-img" alt="tecno-boy">
+            
+        </div>
+        
+        <div class="rigth-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    <label for="usuario">User</label>
+                    <input type="text" name="usuario" placeholder="User">
+                </div>
+
+                <div class="textfield">
+                    <label for="senha">Password</label>
+                    <input type="password" name="senha" placeholder="Password">
+                </div>            
+                <button onclick="toggle()"  class="btnlogin"> Login </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup">
+        <h2>Login Successfully!</h2>
+        <p>Now, enjoy our community and feel free to try new things!</p>
+        <button onclick="toggle()"  class="btnpopup"> Close </button>
+    </div>
+
+      <script type="text/javascript">
+        function toggle(){
+            var blur = document.getElementById('blur')
+            blur.classList.toggle('active')
+
+            var popup = document.getElementById('popup')
+            popup.classList.toggle('active')
+        }
+     </script>
+</body>
+</html>
